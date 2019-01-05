@@ -4,7 +4,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 import { SelectDialogComponent } from './app/select-dialog/select-dialog.component';
-import { GraphcontainerComponent } from './app/graphcontainer/graphcontainer.component';
+
 
 if (environment.production) {
   enableProdMode();

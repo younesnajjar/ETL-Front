@@ -23,6 +23,7 @@ export class DatasetscontainerComponent implements OnInit {
           });
 
         data.forEach(element => {
+          console.log("aaaaa"+element.type);
           element.category = element.type + "File"; // Adding file Categories for each dataset
         });
         palette.model.nodeDataArray = data;
