@@ -1,0 +1,56 @@
+.example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+  }
+  #queryspace {
+    width: 670px;
+    height: 800px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+   
+    
+    font-family: Tahoma, sans-serif;
+    background-color: #ffffff
+  }
+  #queryspace:empty{
+    background-image: url(../../assets/textarea_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+#DialogContainer {
+  min-width: 400px;
+  min-height: 300px;
+}
+.columnssection {
+  height: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 400px;
+}
+.operation {
+  margin: 3px;
+}
+.sideContainer {
+  width : 220px;
+  height: 800px;
+}
+.itemsetContainer {
+  text-align: center;
+}
+#operationsContainer {
+  height: 300px;
+  padding-top:50px;
+}
+.button {
+  margin: 10px;
+}

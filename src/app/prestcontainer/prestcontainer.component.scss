@@ -1,0 +1,22 @@
+#prest-container {
+    display: grid;
+    grid-template-rows: 60px auto;
+    height: 100%;
+
+    div {
+        button{
+            margin: 8px;
+            padding: 8px;
+        }
+    }
+
+    #myDiagramDiv {
+        background-color: #d3d3d3;width: 100%;height:100%; display: flex; justify-content: space-between;flex-grow: 1; border: solid 1px black;
+    }
+    
+    
+}
+.but {
+    width: 150px;
+}
+

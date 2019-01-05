@@ -1,0 +1,11 @@
+#combine-container {
+    height: 800px;
+    div{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+.button {
+    margin: 10px;
+    width: 150px;
+  }

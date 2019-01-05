@@ -1,0 +1,13 @@
+<table class="table" >
+  <thead class="thead-dark">
+    <tr>
+      <th *ngFor="let title of mData.titles" >{{title}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of mData.values" >
+      <td *ngFor="let value of row">{{value}}</td>
+    </tr>
+  </tbody>
+</table>
+<button style="float: right;" class="btn btn-info but" (click)="showPreview($event)" >Preview</button>

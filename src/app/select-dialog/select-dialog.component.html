@@ -1,0 +1,56 @@
+
+      <div id = "DialogContainer" style="text-align: center" >
+  
+      
+
+
+      <section>
+        <table>
+          <tr> <td >
+              <section class="border border-primary rounded columnssection" style="text-align: center ; height:800px;">
+                
+                  <span class="list-group-item row" style="text-align: left;" *ngFor="let column of returnData.columns;let i = index; trackBy: i">
+                    <mat-checkbox class="col-1"  [(ngModel)]="returnData.columns[i].state"></mat-checkbox>
+                    <span draggable  (click)="addData($event,column.name)" [dragData]="column.name"  class="col-7"  >{{column.name}}</span>
+                  </span>
+                
+                </section>
+            </td>
+           
+            <td>
+                <div  droppable (onDrop)="onItemDrop($event)" style="margin:5px;" >
+                    <i class="material-icons" style="float: right; margin-left:-40px;margin-top:-25px;cursor: pointer;" (click)="onBackPressed($event)" >
+                        backspace
+                        </i>
+                    <textarea disabled id = "queryspace"  >{{returnData.query}}</textarea>
+                </div>
+            </td>
+            <td style="vertical-align: center;">
+                <div class = "sideContainer" style="text-align: center;height: 800px;width: 400px;" class="border border-secondary rounded" id="operationsContainer">
+                  <div *ngFor="let itemset of items" id="itemsetContainer" >
+                    
+                        <button draggable *ngFor="let item of itemset" [dragData]="item" (click)="addData($event,item)" class="btn btn-primary btn-sm operation"  >{{item}}</button>
+                  
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="input" aria-describedby="basic-addon2" #input>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary btn-info" type="button" (click)="addText($event,input.value)" >Write</button>
+                    </div>
+                  </div>
+                </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      
+      
+      
+      
+      <section mat-dialog-actions class="row"  >
+          <button  (click)="onNoClick()" class="btn btn-light btn-outline-secondary col-2 button">No Thanks</button>
+          <button mat-button [mat-dialog-close]="returnData" cdkFocusInitial class="btn btn-primary col-2 button">Ok</button>
+        </section>
+
+ 
+      </div>

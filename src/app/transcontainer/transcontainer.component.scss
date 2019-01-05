@@ -1,0 +1,27 @@
+#transitions-container {
+    height: 100%;
+    grid-template-rows: 45px auto;
+
+    #transitions-bar {
+        background: gray;
+        color: white;
+        height: 45px;
+        p{
+            text-align: center;
+            padding-top: 10px;
+        
+        }
+    }
+    #myTransitionsDiv{
+        width:100%;
+        height:100%;
+        border: solid 1px black;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+
+

@@ -1,0 +1,21 @@
+<div id="combine-container" class="row"  >
+  <div class="col-3">
+
+          <div class="list-group-item" *ngFor="let leftColumn of leftColumns" (click)="setLeftLink($event,leftColumn.name)" >{{leftColumn.name}}</div>
+
+  </div>
+  <div class="col-6" style="margin: auto" >
+    <div class="row">
+    <button class="col btn btn-primary" style="text-align: center; height: 40px;margin:5px" >{{returnData.leftLink.column}}</button>
+    <button class="col btn btn-dark" style="text-align: center; height: 40px;margin:5px"  >{{returnData.rightLink.column}}</button>
+  </div>
+  </div>
+  <div class="col-3">
+          <div class="list-group-item" *ngFor="let rightColumn of rightColumns" (click)="setRightLink($event,rightColumn.name)" >{{rightColumn.name}}</div>
+  </div>
+  
+</div>
+<section mat-dialog-actions class="row"  >
+    <button  (click)="onNoClick()" class="btn btn-light btn-outline-secondary col-2 button">No Thanks</button>
+    <button mat-button [mat-dialog-close]="returnData" cdkFocusInitial class="btn btn-primary col-2 button">Ok</button>
+  </section>

@@ -1,0 +1,20 @@
+#polette-container {
+    display: grid;
+    grid-template-rows: 60px 40% auto;
+    height: 100%;
+    border-left: 1px dotted white;
+    
+}
+#polette-bar {
+    background: #2D2E2E;
+    color: white;
+    p{
+        margin: 15px;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+}
+app-transcontainer {
+    
+}
